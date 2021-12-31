@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/spf13/cobra"
 	"github.com/weiliang-ms/easyctl/cmd/add"
-	"github.com/weiliang-ms/easyctl/cmd/boot"
+	//"github.com/weiliang-ms/easyctl/cmd/boot"
 	"github.com/weiliang-ms/easyctl/cmd/clean"
 	"github.com/weiliang-ms/easyctl/cmd/deny"
 	"github.com/weiliang-ms/easyctl/cmd/exec"
@@ -48,7 +48,7 @@ func init() {
 	RootCmd.PersistentFlags().BoolVarP(&Debug, "debug", "d", false, "开启debug模式")
 	subCmds := []*cobra.Command{
 		add.RootCmd,
-		boot.RootCmd,
+		//boot.RootCmd,
 		clean.RootCmd,
 		deny.RootCmd,
 		exec.RootCmd,
